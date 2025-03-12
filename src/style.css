@@ -1,0 +1,201 @@
+@import "tailwindcss";
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  text-align: left;
+  width: 100%;
+  min-height: 100vh;
+  @apply bg-gray-200;
+}
+
+input[type="text"],
+textarea {
+  background-color: #fff;
+  @apply border border-gray-400 rounded-md p-2;
+}
+
+label {
+  margin: 0;
+  padding: 0;
+  /* margin-bottom: -10px; */
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+#app {
+  width: 100%;
+}
+
+*,
+*::before,
+*::after {
+  min-width: 0;
+  min-height: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  object-position: center center;
+}
+
+*:focus,
+*:-moz-focusring {
+  outline: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+ol li,
+ul li {
+  list-style-type: inherit;
+}
+
+code,
+pre,
+kbd,
+samp {
+  font-family: inherit;
+}
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+address,
+cite,
+dfn,
+em,
+i,
+var {
+  font-style: inherit;
+}
+
+del,
+ins,
+s,
+u {
+  text-decoration: none;
+}
+
+mark {
+  background-color: transparent;
+  color: inherit;
+}
+
+q {
+  quotes: "“" "”" "‘" "’";
+}
+
+q::before {
+  content: open-quote;
+}
+
+q::after {
+  content: close-quote;
+}
+
+small,
+sub,
+sup {
+  font-size: inherit;
+}
+
+svg:not([fill]) {
+  fill: currentColor;
+}
+
+caption,
+th {
+  text-align: inherit;
+}
+
+th {
+  font-weight: inherit;
+}
+
+table {
+  border-spacing: 0;
+}
+
+button {
+  border-radius: 0;
+  font-weight: inherit;
+  text-align: inherit;
+  text-transform: inherit;
+  letter-spacing: inherit;
+}
+
+select {
+  text-transform: inherit;
+}
+
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  text-align: inherit;
+  cursor: pointer;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus {
+  outline: 0;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: inherit;
+  opacity: 0.625;
+}
+
+script,
+[hidden] {
+  display: none !important;
+}
+
+.botao {
+  @apply bg-blue-500 text-white;
+  @apply font-bold py-2 px-4 rounded;
+  @apply hover:bg-blue-600 text-white;
+  @apply cursor-pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.edit{
+  @apply bg-yellow-500 text-white;
+  @apply hover:bg-yellow-600 text-white;
+}
+.delete{
+  @apply bg-red-500 text-white;
+  @apply hover:bg-red-600 text-white;
+}
+
+.vue3-easy-data-table__header * {
+  font-weight: bold;
+}
+.vue3-easy-data-table__body{
+  cursor: pointer;
+}
