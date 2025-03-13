@@ -10,8 +10,6 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header bg-zinc-700 text-white">
-          <img id="svg" src="../../assets/triangule.svg" alt="" />
-
           <h1 class="modal-title fs-5" id="modalProd">Detalhes do Produto</h1>
           <button
             type="button"
