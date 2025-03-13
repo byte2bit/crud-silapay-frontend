@@ -25,7 +25,7 @@
             type="text"
             name="price"
             id="price"
-            placeholder="Insira o nome"
+            placeholder="Insira o preço"
             v-model="price"
           />
         </div>

@@ -17,7 +17,7 @@
             data-bs-dismiss="modal"
             aria-label="Close"
           >
-            <img src="@/icons/close.svg" alt="fechar" />
+            <img src="@/icons/close.svg" alt="fechar" @click="viewFalse()" />
           </button>
         </div>
 
@@ -136,8 +136,8 @@ const props = defineProps({
   editItem: Function,
 });
 
-const send = () => {
-  console.log("send");
+const viewFalse = () => {
+  view.value = true;
 };
 
 let view = ref(true);
