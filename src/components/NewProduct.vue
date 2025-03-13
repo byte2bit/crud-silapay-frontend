@@ -64,7 +64,7 @@ let description = ref("");
 const submitForm = () => {
   store.postProducts({
     name: name.value, 
-    price: +convertFloatInv(price.value), 
+    price: convertFloatInv(price.value), 
     description: description.value
   });
 };

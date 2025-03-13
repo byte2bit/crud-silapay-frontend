@@ -26,7 +26,6 @@
 <script setup>
 import Modal from "./Modal.vue";
 import NewProduct from "./NewProduct.vue";
-import Toast from "@/utils/Toast.vue";
 import { computed, onMounted, ref } from "vue";
 import { useProductsGet } from "@/store/productStore";
 import { useProductsDel } from "@/store/productStore";
