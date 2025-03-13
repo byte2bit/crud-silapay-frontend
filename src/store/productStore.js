@@ -61,12 +61,12 @@ export const useProductsPost = defineStore('prodPost', {
         async postProducts(dados) {
 
             await api.post('/product', dados)
-                .then(window.location.reload())
                 .catch(error => {
                     this.message = error.response.data.message;
                     this.error = error.response.data.error;
                     alert(this.message, this.error);
                 });
+            window.location.reload();
         },
     },
 })
